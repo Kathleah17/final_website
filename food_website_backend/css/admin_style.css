@@ -3,11 +3,16 @@
 :root{
    --main-color:#4834d4;
    --red:#e74c3c;
-   --orange:#f39c12;
    --black:#34495e;
    --white:#fff;
    --light-bg:#f5f5f5;
    --light-color:#999;
+   --canon: #8b4E5E;
+   --cocoa: #321E25;
+   --contessa:#c06378;
+   --pink:#fdb4bf;
+   --darkpink:#e894a7;
+   --softpink:#ffd8d9;
    --border:.2rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -35,7 +40,7 @@
 }
 
 ::-webkit-scrollbar-thumb{
-   background-color: var(--main-color);
+   background-color: var(--darkpink);
 }
 
 html{
@@ -44,7 +49,7 @@ html{
 }
 
 body{
-   background-color: var(--light-bg);
+   background-color: var(--softpink);
    /* padding-bottom: 7rem; */
 }
 
@@ -70,21 +75,24 @@ section{
 }
 
 .btn{
-   background-color: var(--main-color);
+background-color: var(--darkpink);
+color:var(--pink);
 }
 
 .delete-btn{
-   background-color: var(--red);
+   background-color: var(--darkpink);
+   color:var(--pink);
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--pink);
 }
 
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
    background-color: var(--black);
+	color:var(--pink);
 }
 
 .flex-btn{
@@ -97,7 +105,7 @@ section{
    top:0;
    max-width: 1200px;
    margin:0 auto;
-   background-color: var(--light-bg);
+   background-color: var(--pink);
    padding:2rem;
    display: flex;
    align-items: center;
@@ -112,7 +120,7 @@ section{
 
 .message i{
    font-size: 2.5rem;
-   color:var(--red);
+   color:var(--cocoa);
    cursor: pointer;
 }
 
@@ -149,7 +157,9 @@ section{
 }
 
 .form-container form{
-   background-color: var(--white);
+   background-color: var(--softpink);
+	 background:transparent;
+	 filter:blur(85px);
    border-radius: .5rem;
    border:var(--border);
    box-shadow: var(--box-shadow);
@@ -177,7 +187,7 @@ section{
 
 .form-container form .box{
    width: 100%;
-   background-color: var(--light-bg);
+   background-color: var(--pink);
    padding:1.4rem;
    font-size: 1.4rem;
    color:var(--black);
@@ -219,18 +229,19 @@ section{
 }
 
 .header .flex .navbar a:hover{
-   color:var(--main-color);
+   color:var(--cocoa);
 }
 
 .header .flex .icons > *{
    font-size: 2.5rem;
    cursor: pointer;
-   color:var(--light-color);
+   color:var(--pink);
    margin-left: 1.7rem;
 }
 
 .header .flex .icons > *:hover{
-   color:var(--main-color);
+   background-color: var(--black);
+   color:var(--pink);
 }
 
 .header .flex .profile{
@@ -277,7 +288,7 @@ section{
 
 .dashboard .box-container .box{
    text-align: center;
-   background-color: var(--white);
+   background-color: var(--pink);
    border:var(--border);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
@@ -287,7 +298,7 @@ section{
 
 .dashboard .box-container .box h3{
    font-size: 2.7rem;
-   color:var(--black);
+   color:var(--cocoa);
 }
 
 .dashboard .box-container .box h3 span{
